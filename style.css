@@ -1,0 +1,115 @@
+* {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+  }
+/* 1. KEYFRAMES NO TOPO DO STYLE 
+  @keyframes girar {
+    0% { transform: rotate(0deg); }
+    80% { transform: rotate(360deg); }
+  }
+
+  .card-neon {
+    position: relative;
+    width: 350px;
+    height: 150px;
+    border-radius: 20%; /* círculo 
+    overflow: hidden;
+    padding: 4px; /* espessura da borda 
+  }
+
+  /* 2. BORDA GIRANDO - pseudo elemento 
+  .card-neon::before {
+    content: '';
+    position: absolute;
+    top: -70%;
+    left: -60%;
+    width: 90%;
+    height: 90%;
+    
+    /* Cores neon girando 
+    background: conic-gradient(from 0deg, #ff00ff, #00ffff, #ff00);
+    
+    /* 3. ANIMAÇÃO AQUI 
+    animation: girar 9s linear infinite;
+  } Até aqui iliminei animação, vou analisar se volto a usar*/
+    
+  .piscar-fundo {
+    animation: piscar-fundo 2.5s infinite;
+    padding: 4px 8px;
+    border-radius: 6px;
+  }
+
+  @keyframes piscar-fundo {
+    0%, 100% { background-color: #003; color: #CCF; }
+    50% { background-color: transparent; color: black; }
+  }
+
+
+  /* 4. essa classe faz parte da imagem img */
+  .card-neon img {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+    z-index: 1;
+  }
+.img-hover:hover {
+    transform: scale(1.4); /* = hover:scale-140 */
+    filter: brightness(0.90);
+  }
+    .foto:hover {
+    transform: scale(1.1); /* = hover:scale-110 */
+    filter: brightness(0.90);
+  }
+    .imagem:hover {
+    transform: scale(1.3); /* = hover:scale-130 */
+    filter: brightness(0.90);
+  }
+.imagem {
+    width: 256px;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+  }
+    h1,h2,h3 {
+      background-color: #cc0;
+      text-align: center;
+      border-radius: 25px;
+      font-family: Times New Roman;
+      font-style: oblique;
+      font-weight: bold;
+      margin: 20px auto;
+      padding: 4px 24px;
+      margin-bottom:8px;
+    }
+    img {
+      border-radius: 50%;
+      height: 150px;
+      width: 150px;
+      display: block;
+      object-fit: cover;
+      margin: auto;
+    }
+    .div {
+      display: flex;
+      background: #555;
+      border-radius: 20px;
+     object-fit: cover;
+     display: block;
+        
+    }
+     p { font-style: oblique;
+         font-weight: 50px;
+     }
+    /* Talvez futuramente posso usar este codigo
+    .callout {
+        background: #eff6ff;
+        border-radius: 12px;
+        padding: 18px 20px;
+        margin: 24px 0;
+        font-family: 'Segoe UI', sans-serif;
+        color: #1e3a5f;
+        border-left: 4px solid #3b82f6;
+      } */
+
