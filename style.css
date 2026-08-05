@@ -3,36 +3,6 @@
       padding: 0;
       box-sizing: border-box;
   }
-/* 1. KEYFRAMES NO TOPO DO STYLE 
-  @keyframes girar {
-    0% { transform: rotate(0deg); }
-    80% { transform: rotate(360deg); }
-  }
-
-  .card-neon {
-    position: relative;
-    width: 350px;
-    height: 150px;
-    border-radius: 20%; /* círculo 
-    overflow: hidden;
-    padding: 4px; /* espessura da borda 
-  }
-
-  /* 2. BORDA GIRANDO - pseudo elemento 
-  .card-neon::before {
-    content: '';
-    position: absolute;
-    top: -70%;
-    left: -60%;
-    width: 90%;
-    height: 90%;
-    
-    /* Cores neon girando 
-    background: conic-gradient(from 0deg, #ff00ff, #00ffff, #ff00);
-    
-    /* 3. ANIMAÇÃO AQUI 
-    animation: girar 9s linear infinite;
-  } Até aqui iliminei animação, vou analisar se volto a usar*/
     
   .piscar-fundo {
     animation: piscar-fundo 2.5s infinite;
@@ -46,7 +16,7 @@
   }
 
 
-  /* 4. essa classe faz parte da imagem img */
+  /* essa classe faz parte da imagem img */
   .card-neon img {
     position: relative;
     width: 100%;
