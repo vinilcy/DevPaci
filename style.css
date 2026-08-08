@@ -3,9 +3,8 @@
       padding: 0;
       box-sizing: border-box;
   }
-    
   .piscar-fundo {
-    animation: piscar-fundo 2.5s infinite;
+    animation: piscar-fundo 1.9s infinite;
     padding: 4px 8px;
     border-radius: 6px;
   }
@@ -26,11 +25,11 @@
     z-index: 1;
   }
 .img-hover:hover {
-    transform: scale(1.4); /* = hover:scale-140 */
+    transform: scale(1.3); /* = hover:scale-130 */
     filter: brightness(0.90);
   }
     .foto:hover {
-    transform: scale(1.1); /* = hover:scale-110 */
+    transform: scale(1.3); /* = hover:scale-110 */
     filter: brightness(0.90);
   }
     .imagem:hover {
@@ -46,7 +45,7 @@
       background-color: #cc0;
       text-align: center;
       border-radius: 25px;
-      font-family: Times New Roman;
+      font-family: Times New Roman, sans-serif, Segoe UI;
       font-style: oblique;
       font-weight: bold;
       margin: 20px auto;
@@ -72,4 +71,34 @@
      p { font-style: oblique;
          font-weight: 50px;
      }
-
+    /* Talvez futuramente posso usar este codigo
+    .callout {
+        background: #eff6ff;
+        border-radius: 12px;
+        padding: 18px 20px;
+        margin: 24px 0;
+        font-family: 'Segoe UI', sans-serif;
+        color: #1e3a5f;
+        border-left: 4px solid #3b82f6;
+      } */
+  .whatsapp-btn {
+    position: fixed;     /* Fixa na tela mesmo com scroll */
+    bottom: 20px;        /*  Distância de baixo */
+    right: 20px;         /*  Distância da direita */
+    z-index: 9999;       /* .Ficar por cima de tudo */
+    
+    background: #25D366; /* Cor Verde do WhatsApp */
+    color: white;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;  /* Deixar redondo */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 25px;
+    text-decoration: none;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.3); /* Dar Sombra */
+  }
+ .whatsapp-btn:hover {
+    transform: scale(1.3); /* Aumentar quando passa o mouse */
+  }
